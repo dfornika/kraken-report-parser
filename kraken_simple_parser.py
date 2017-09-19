@@ -6,7 +6,7 @@ f = open(sys.argv[1], 'r')
 selected_rank_code = sys.argv[2].upper()
 percent_threshold = float(sys.argv[3])
 
-rank_codes = {'U', 'D', 'K', 'P', 'C', 'O', 'F', 'G', 'S', '-'}
+rank_codes = {'U', 'D', 'K', 'P', 'C', 'O', 'F', 'G', 'S'}
 assert selected_rank_code in rank_codes, "Rank must be one of [(U)nclassified, (D)omain, (K)ingdom, (P)hylum, (C)lass, (O)rder, (F)amily, (G)enus, or (S)pecies.]"
 
 total_reads = 0
