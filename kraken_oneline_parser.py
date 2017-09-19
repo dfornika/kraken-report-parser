@@ -59,7 +59,7 @@ for filename in filenames:
         str('%.3f' % (other_reads / float(total_reads) * 100)) + '\t' + str(other_reads)
 
     for result in top_results:
-        output += "\t" + str(result['percent_reads_in_clade'])
+        output += "\t" + str('%.3f' % result['percent_reads_in_clade'])
         output += "\t" + str(result['number_reads_in_clade'])
         output += "\t" + str(result['ncbi_taxonomy_id'])
         output += "\t" + str(result['clade_name'])
